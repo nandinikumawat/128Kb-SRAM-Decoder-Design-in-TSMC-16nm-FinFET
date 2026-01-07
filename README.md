@@ -32,7 +32,6 @@ This project implements a 512-row decoder for a 128Kb SRAM using TSMC 16nm FinFE
 <p align="center">
   <img width="700" height="282" alt="image" src="https://github.com/user-attachments/assets/711d4d06-d499-405a-8fa9-41727ad364a7" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: High-level block diagram of the 512-row hierarchical predecoder, showing the PD2, PD1, and PD0 predecoder blocks</i></p>
 
 **Stage 3: Final AND Matrix**
@@ -43,13 +42,11 @@ This project implements a 512-row decoder for a 128Kb SRAM using TSMC 16nm FinFE
 <p align="center">
   <img width="309" alt="image" src="https://github.com/user-attachments/assets/7ee74c5b-13d2-4212-bb4e-e0b9e525362c" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Automated schematic generation using Cadence SKILL</i></p>
 
 <p align="center">
   <img width="376" alt="image" src="https://github.com/user-attachments/assets/a2637182-e21f-4d2c-87c5-c21687785911" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Wordline driver design</i></p>
 
 ### Wordline Driver Design
@@ -63,7 +60,6 @@ Each decoded signal drives a two-stage buffer chain:
 <p align="center">
   <img width="534" alt="image" src="https://github.com/user-attachments/assets/fef15d28-b55e-43fe-a30f-59101afc5ec6" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: WL driver sized to match load of 256 SRAM cells with physical sizing aligned to 32 poly-pitch width for row integration</i></p>
 ## Key Features
 
@@ -164,7 +160,6 @@ VA1 A1 0 PULSE(0 VDD 32n 10p 10p 10n 100n)
 <p align="center">
   <img width="713" alt="image" src="https://github.com/user-attachments/assets/ceb5c451-aed3-41ae-8b2a-54b6d01a6fb6" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Verified WL functional correctness</i></p>
 ***
 ### Layout Metrics
@@ -184,7 +179,6 @@ VA1 A1 0 PULSE(0 VDD 32n 10p 10p 10n 100n)
 <p align="center">
   <img width="271" alt="image" src="https://github.com/user-attachments/assets/4e51b2cc-5ec8-4b15-a578-5ed231f29d4b" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Final layout area = 9.216 µm × 95.948 µm = 884.72 µm²</i></p>
 
 ## Technical Implementation
@@ -252,7 +246,6 @@ rowDecoder512_complete5/
 <p align="center">
   <img width="455" height="269" alt="image" src="https://github.com/user-attachments/assets/fadbeaf1-01aa-4c3c-9d62-7c9fff5f32c5" />
 </p>
-<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Routed predecoder outputs with consistent layer usage and via strategy</i></p>
 ***
 
