@@ -257,7 +257,9 @@ rowDecoder512_complete5/
 - Consistent pin ordering for WL indexing
 - Structured pin grid for clean top-level routing access
 ***
+<p align="center">
 <img width="730" height="379" alt="image" src="https://github.com/user-attachments/assets/fea57a5c-1dfd-4de9-b156-8e5cd0d6e3ee" />
+</p>
 <p align="center"><i>Figure: Generated 16×16 WL driver array using SKILL</i></p>
 
 ### Challenge 4: Signal Skew
