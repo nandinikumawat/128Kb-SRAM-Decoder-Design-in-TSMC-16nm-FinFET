@@ -29,7 +29,10 @@ This project implements a 512-row decoder for a 128Kb SRAM using TSMC 16nm FinFE
 - Subblock3: A6, A7, A8 → 8 outputs (pd2_0 through pd2_7)
 - Implementation: 8× AND3 gates each
 ***
-<img width="700" height="282" alt="image" src="https://github.com/user-attachments/assets/711d4d06-d499-405a-8fa9-41727ad364a7" />
+<p align="center">
+  <img width="700" height="282" alt="image" src="https://github.com/user-attachments/assets/711d4d06-d499-405a-8fa9-41727ad364a7" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: High-level block diagram of the 512-row hierarchical predecoder, showing the PD2, PD1, and PD0 predecoder blocks</i></p>
 
 **Stage 3: Final AND Matrix**
@@ -37,10 +40,16 @@ This project implements a 512-row decoder for a 128Kb SRAM using TSMC 16nm FinFE
 - Each gate combines one signal from each predecoder block
 - Total combinations: 8 × 8 × 8 = 512 unique wordlines
 
-<img width="309" height="432" alt="image" src="https://github.com/user-attachments/assets/7ee74c5b-13d2-4212-bb4e-e0b9e525362c" />
+<p align="center">
+  <img width="309" alt="image" src="https://github.com/user-attachments/assets/7ee74c5b-13d2-4212-bb4e-e0b9e525362c" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Automated schematic generation using Cadence SKILL</i></p>
 
-<img width="376" height="466" alt="image" src="https://github.com/user-attachments/assets/a2637182-e21f-4d2c-87c5-c21687785911" />
+<p align="center">
+  <img width="376" alt="image" src="https://github.com/user-attachments/assets/a2637182-e21f-4d2c-87c5-c21687785911" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Wordline driver design</i></p>
 
 ### Wordline Driver Design
@@ -51,7 +60,10 @@ Each decoded signal drives a two-stage buffer chain:
 - **Output**: Dual-polarity wordlines (wls and wln) for SRAM array integration
 - **Width matching**: 32 poly-pitch width for seamless row integration
 ***
-<img width="534" height="215" alt="image" src="https://github.com/user-attachments/assets/fef15d28-b55e-43fe-a30f-59101afc5ec6" />
+<p align="center">
+  <img width="534" alt="image" src="https://github.com/user-attachments/assets/fef15d28-b55e-43fe-a30f-59101afc5ec6" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: WL driver sized to match load of 256 SRAM cells with physical sizing aligned to 32 poly-pitch width for row integration</i></p>
 ## Key Features
 
@@ -149,7 +161,10 @@ VA1 A1 0 PULSE(0 VDD 32n 10p 10p 10n 100n)
 - **Address decoding**: Correct WL activation for test patterns (addr 0, 1, 8, 64, 511)
 - **Signal integrity**: Clean transitions with proper slew rates
 ***
-<img width="713" height="447" alt="image" src="https://github.com/user-attachments/assets/ceb5c451-aed3-41ae-8b2a-54b6d01a6fb6" />
+<p align="center">
+  <img width="713" alt="image" src="https://github.com/user-attachments/assets/ceb5c451-aed3-41ae-8b2a-54b6d01a6fb6" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Verified WL functional correctness</i></p>
 ***
 ### Layout Metrics
@@ -166,7 +181,10 @@ VA1 A1 0 PULSE(0 VDD 32n 10p 10p 10n 100n)
 - **Skew**: Uniform delay across all 512 rows due to identical buffer chains
 - **Operating frequency**: Suitable for worst-case 80°C operation
 
-<img width="271" height="450" alt="image" src="https://github.com/user-attachments/assets/4e51b2cc-5ec8-4b15-a578-5ed231f29d4b" />
+<p align="center">
+  <img width="271" alt="image" src="https://github.com/user-attachments/assets/4e51b2cc-5ec8-4b15-a578-5ed231f29d4b" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Final layout area = 9.216 µm × 95.948 µm = 884.72 µm²</i></p>
 
 ## Technical Implementation
@@ -231,7 +249,10 @@ rowDecoder512_complete5/
 - Different metal layers for first 4 outputs in array
 - Shift to different metal layer every 4 cells in column to avoid overlap
 ***
-<img width="455" height="269" alt="image" src="https://github.com/user-attachments/assets/fadbeaf1-01aa-4c3c-9d62-7c9fff5f32c5" />
+<p align="center">
+  <img width="455" height="269" alt="image" src="https://github.com/user-attachments/assets/fadbeaf1-01aa-4c3c-9d62-7c9fff5f32c5" />
+</p>
+<p align="center"><i>Figure: [Add your caption here]</i></p>
 <p align="center"><i>Figure: Routed predecoder outputs with consistent layer usage and via strategy</i></p>
 ***
 
@@ -254,7 +275,9 @@ rowDecoder512_complete5/
 - Uniform routing paths with consistent via count
 - Minimized wirelength variations through dense packing
 
-<img width="700" height="314" alt="image" src="https://github.com/user-attachments/assets/908d9a6b-7449-4571-941e-0c4fbebf1974" />
+<p align="center">
+  <img width="700" height="314" alt="image" src="https://github.com/user-attachments/assets/908d9a6b-7449-4571-941e-0c4fbebf1974" />
+</p>
 <p align="center"><i>Figure: Wordline driver organization</i></p>
 
 ## Project Structure
@@ -284,7 +307,9 @@ sram-decoder/
     ├── phase3_presentation.pdf     # Final presentation
     └── images/                     # Layout screenshots
 ```
-<img width="884" height="237" alt="image" src="https://github.com/user-attachments/assets/f84c8564-1cbc-45f3-9794-26d8f0012b4e" />
+<p align="center">
+  <img width="884" height="237" alt="image" src="https://github.com/user-attachments/assets/f84c8564-1cbc-45f3-9794-26d8f0012b4e" />
+</p>
 <p align="center"><i>Figure: Complete placement of required standard cells; WL driver chain implemented as NAND3 + INV1 + INV4 + INV16. No filler cells inside the WL driver chain to maximize density and reduce extra parasitics</i></p>
 
 ## Future Enhancements
